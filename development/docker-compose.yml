@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  python:
+    build:
+      context: .
+    ports:
+      - "88:22"
+      - "8000:8000"
+    volumes:
+      - ./env/site-packages:/usr/local/lib/python3.9/site-packages
